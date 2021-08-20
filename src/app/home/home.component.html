@@ -240,13 +240,14 @@
                 <p>For any Inquiries or if you require any additional information, feel free to get in touch.</p>
                 <form #myform="ngForm" (ngSubmit)="submitForm(myform)">
                     <label for="name">Name:</label>
-                    <input id="name" class="form-control" type="text" name="name" [(ngModel)]="name"><br>
+                    <input id="name" class="form-control" type="text" name="name" [(ngModel)]="name" required><br>
                     <label for="email">Email:</label>
-                    <input id="email" class="form-control" type="email" [(ngModel)]="email_address"
-                        name="email_address">
+                    <input id="email" class="form-control" type="email" [(ngModel)]="email_address" name="email_address"
+                        required>
                     <br>
                     <label for="message">Message:</label>
-                    <textarea id="message" class="form-control" name="message" [(ngModel)]="message"></textarea><br>
+                    <textarea id="message" class="form-control" name="message" [(ngModel)]="message"
+                        required></textarea><br>
                     <button type="submit" class="btn btn-sm btn-dark">Submit</button>
                 </form>
             </div>
