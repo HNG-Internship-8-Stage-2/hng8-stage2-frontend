@@ -7,13 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
     title = 'resume';
-    successMessage;
-
-    constructor() {
-        this.successMessage = false;
-    }
-
-    submitMessage(): any {
-        this.successMessage = true;
-    }
 }
