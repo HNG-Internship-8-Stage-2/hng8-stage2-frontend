@@ -11,7 +11,7 @@
 }
 
 .pg-body {
-    width: 80vw;
+    width: 80%;
     min-height: 80vh;
     background-color: rgba(255,255,255,1);
 
@@ -135,11 +135,16 @@
             }
         }
 
-        #bootcamps>div {
+        #bootcamps>div, #skills-iq>div {
             padding-left: 2vw;
 
             div {
-                padding-bottom: 2vh;
+                margin-bottom: 0.5vh;
+                margin-left: 0.3em;
+                padding-left: 1em;
+                border-left: 5px solid rgba(50,50,50,1);
+                height: 5vh;
+                line-height: 5vh;
 
                 span {
                     padding-right: 2vw;
@@ -147,19 +152,10 @@
             }
         }
 
-        #skills-iq>div {
-            padding-left: 2vw;
-
-            div {
-                padding-bottom: 2vh;
-
-                span {
-                    padding-right: 5vw;
-                }
-            }
-        }
-
         #contact-form {
+            background-color: rgba(50,50,50,1);
+            color: rgba(250,250,250,1);
+
             label {
                 font-size: 0.55rem;
                 padding-right: 2vw;
@@ -188,27 +184,15 @@
 }
 
 #pg-footer {
-    width: 80vw;
+    width: 80%;
     height: 20vh;
-    background-color: rgba(240,240,240,1);
+    background-color: rgba(200,200,200,1);
     color: rgba(250,250,250,1);
     display: flex;
-    margin-top: 3vh;
-
-    #text-message {
-        width: 25%;
-        height: 100%;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        color: rgba(50,50,50,1);
-        padding-top: 3.5vh;
-        font-size: 0.6rem;
-        font-style: italic;
-    }
+    margin-top: 2vh;
 
     #partner-logos {
-        width: 75%;
+        width: 100%;
         height: 100%;
         display: flex;
         justify-content: space-evenly;
@@ -250,4 +234,38 @@
     }
 }
 
+@media screen and (max-width: 1020px) {
+    .pg-body {
+        //width: 85%;
 
+        .body-content {
+            #contact-form {
+
+                input {
+                    width: 50vw;
+                }
+    
+                textarea {
+                    width: 60vw;
+                }
+            }
+        }        
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .pg-body {
+        // width: 95%;
+
+        .body-header {
+   
+            #header-address {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+            }
+        }
+       
+    }
+}
